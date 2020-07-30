@@ -1,0 +1,282 @@
+
+/* ---- STYLES 
+
+font-family: 'Raleway', sans-serif;
+background-color: #FFF5EE;
+header color: #FA8072; (salmon)
+
+---- */
+
+
+/* Global Layout Set-up */
+
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: #222;
+  background: #FFF5EE;
+}
+
+h2 {
+  color: #FA8072;
+
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #FFF5EE;
+}
+a:hover {
+  color: #800080;
+}
+
+li {
+  list-style: none;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: #FA8072;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 600;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: #FFF5EE;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: #FFDAB9;
+}
+
+header {
+  text-align: center;
+  background:  linear-gradient(#FFF5EE, transparent 70%),
+  linear-gradient(0deg, #FFF5EE, transparent),
+  url('images/london_2.jpg')no-repeat center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 190px;
+  height: 160px;
+  border-radius: 30%;
+  border: 3px solid #FA8072;
+  opacity: 0.8;
+  box-shadow: 3px 3px 3px #FA8072;
+  transition: transform .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.2);
+}
+.tag {
+  background-color: rgb(255, 245, 238, 0.6);
+  color: #FA8072;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+} 
+.location {
+  background-color: #FA8072;
+  color: #FFF5EE;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: rgb(255, 255, 255, 0.3);
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card:hover {
+  border-color: #FA8072;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #FFDAB9;
+  color: #FA8072;
+  font-weight: 600;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #FFEFD5;
+}
+
+footer {
+  width: 100%;
+  height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+
+.clearfix {
+  clear: both;
+}
+
+/* Syles for CONTACT page */
+.contact {
+  background:  linear-gradient(#FFF5EE, transparent 70%),
+  linear-gradient(0deg, #FFF5EE, transparent),
+  url('images/london_1.jpg')no-repeat center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+.content a {
+  background-color: #FA8072;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  
+}
+a > img {
+  padding-top: 10px;
+  transition: transform .4s;
+  width: 60px;
+}
+
+a > img:hover {
+  transform: rotate(10deg);
+}
+
+/*Styles for RESUME page*/
+.resume {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container > img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 auto; 
+  margin-top: 20px;
+  transition: all .8s ease-out;
+  opacity: .8;
+  border: 2px solid #FFDAB9;
+}
+.container > img:hover {
+  border: 2px solid #FA8072;
+  opacity: 1;
+}
+.container > ul {
+line-height: 1.3rem;
+
+}
+.card-resume {
+  margin: 5px !important;
+  padding: 20px 40px 40px !important;
+  max-width: 500px;
+}
+.header-resume {
+  background:  linear-gradient(#FFF5EE, transparent 70%),
+  linear-gradient(0deg, #FFF5EE, transparent),
+  url('images/london_3.jpg')no-repeat center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+
+  
+  
+}
